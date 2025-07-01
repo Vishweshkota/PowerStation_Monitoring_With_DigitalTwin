@@ -1,25 +1,25 @@
-### PowerStation_Monitoring_With_DigitalTwin
+# PowerStation_Monitoring_With_DigitalTwin
 A real-time, interactive power station monitoring system that leverages edge computing, digital twin visualization, and AI-assisted predictive maintenance for effective system management and user training.
 ![Powerstation View](Diagrams/Unity_View.png)
 
-### Project Overview
+## Project Overview
 This project simulates and manages a wind turbine power station using a two-part architecture:
 
-# Edge Device App (Running on Raspberry Pi 5):
+## Edge Device App (Running on Raspberry Pi 5):
 -Collects real-time telemetry data from a Sense HAT emulator including:
     -Temperature
     -Humidity
     -Pressure
     -Simulated wind turbine performance data is also generated here.
 
-# Digital Twin Application (DTA):
+## Digital Twin Application (DTA):
 - Receives data from the edge device over MQTT and offers a complete digital twin experience via:
 - A Client Framework Component for data handling and AI integration.
 - A Unity Component for immersive 3D visualization and real-time system monitoring.
 
 ![System Diagram](Diagrams/System_Diagram.png)
 
-### Application/Use Cases
+## Application/Use Cases
 
 ## System Performance & Management
 - Real-time data received via MQTT is visualized in the Unity-based digital twin.
