@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net481</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<Nullable>disable</Nullable>
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<OutputType>Library</OutputType>
+		<AssemblyName>LBS.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>LabBenchStudios.Pdt</RootNamespace>
+		<SignAssembly>False</SignAssembly>
+		<ErrorReport>none</ErrorReport>
+		<Title>Lab Bench Studios - Programming Digital Twins - Client Framework Components</Title>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Authors>Lab Bench Studios</Authors>
+		<Description>This library contains basic data processing (data containers and JSON processing) and communications (MQTT) capabilities designed to be used as part of the Building Digital Twins course and as a dependency for the Digital Twin Application.</Description>
+		<Copyright>2024 Andrew D. King</Copyright>
+		<PackageProjectUrl>https://github.com/programming-digital-twins/pdt-cfw-components</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/programming-digital-twins/pdt-cfw-components</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<AssemblyVersion>0.0.1.6</AssemblyVersion>
+		<FileVersion>0.0.1.6</FileVersion>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <WarningLevel>5</WarningLevel>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <WarningLevel>5</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README.md" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DTDLParser" Version="1.0.52" />
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net481" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="MQTTnet" Version="4.3.7.1207" />
+		<PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="4.3.7.1207" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="OllamaSharp" Version="4.0.22" />
+		<PackageReference Include="System.Buffers" Version="4.6.0" />
+		<PackageReference Include="System.Memory" Version="4.6.0" />
+		<PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.0" />
+		<PackageReference Include="System.Text.Json" Version="9.0.0" />
+		<PackageReference Include="System.Threading.Tasks.Extensions" Version="4.6.0" />
+	</ItemGroup>
+
+</Project>
