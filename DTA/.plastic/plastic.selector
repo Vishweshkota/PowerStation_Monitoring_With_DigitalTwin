@@ -1,0 +1,3 @@
+repository "DigitalTwinApp 2025-01-19_01-10-05/DigitalTwinApp@2475742050893@cloud"
+  path "/"
+    smartbranch "/main/labmodule10"
