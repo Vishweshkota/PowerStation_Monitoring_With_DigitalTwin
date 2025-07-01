@@ -1,0 +1,41 @@
+{
+  "typeName": "thermostat",
+  "version": "2024-11-18",
+  "description": "Thermostat category configuration.",
+  "displayName": "Heating System Category",
+  "modelName": "dtmi:LabBenchStudios:PDT:thermostat;1",
+  "id": 1000,
+  "minId": 1001,
+  "maxId": 1999,
+  "typeEntries": {
+    "targetTemperature": {
+      "typeName": "targetThermostatTemperature",
+      "description": "HVAC actuator type configuration.",
+      "displayName": "HVAC",
+      "modelName": "targetThermostatTemperature",
+      "resourceName": "{productName}/{groupdID}/{locationID}/{deviceID}/{typeName}",
+      "dataContainerType": "LabBenchStudios.Pdt.Data.ActuatorData",
+      "id": 1004,
+      "modelConstraints": {
+        "enableConstraints": false,
+        "enableDutyCycle": false
+      }
+    },
+    "targetHumidity": {
+      "typeName": "currentThermostatTemperature",
+      "description": "Temperature sensor type configuration.",
+      "displayName": "Current Temperature",
+      "modelName": "currentThermostatTemperature",
+      "resourceName": "{productName}/{groupdID}/{locationID}/{deviceID}/{typeName}",
+      "dataContainerType": "LabBenchStudios.Pdt.Data.SensorData",
+      "id": 1013,
+      "modelConstraints": {
+        "enableConstraints": true,
+        "enableDutyCycle": false,
+        "minReading": "0.0",
+        "maxReading": "0.0",
+        "optimalReading": "0.0"
+      }
+    }
+  }
+}
